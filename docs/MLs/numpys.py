@@ -49,8 +49,39 @@ np.concatenate((np_array,np_array_second),axis=0)       # np_array와 np_array_s
 #        [ 1,  2],
 #        [ 3,  4],
 #        [ 5,  6]])
-5:33
+# 5:33
 np.concatenate((np_array,np_array_second),axis=1)       # np_array와 np_array_second를 column단위로 병합
 # array([[ 7,  8,  1,  2],
 #        [ 9, 10,  3,  4],
 #        [11, 12,  5,  6]])
+# reshape() : 기존 배열을 재배열
+# 1차원 배열 생성
+arr = np.arange(10)
+print("원본 1차원 배열:")
+print(arr)
+
+# arr.reshape(5,2)
+# array([[0, 1],
+#        [2, 3],
+#        [4, 5],
+#        [6, 7],
+#        [8, 9]])
+
+# arr.reshape(-1,2)
+# array([[0, 1],
+#        [2, 3],
+#        [4, 5],
+#        [6, 7],
+#        [8, 9]])
+# arr.reshape(-1,1)
+# array([[0],
+#        [1],
+#        [2],
+#        [3],
+#        [4],
+#        [5],
+#        [6],
+#        [7],
+#        [8],
+#        [9]])
+pass
